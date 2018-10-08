@@ -1,0 +1,36 @@
+ionic start
+- Create ionic application
+- link it to github code
+
+	- aqui tem q criar o github repository antes...
+		- nao criar qq arquivo no repository
+		- usar o https...
+
+- ionic pro will use this repository to build and so on...
+
+- nao criar com crodova, etc...
+
+- na linha de comando do diretorio...
+	
+	- cd tboats-checklist-reviser
+	- git init
+	- git add .
+	- git commit -m "First commit"
+	- git remote add origin https://github.com/tuicci/tboats-checklist-reviser.git
+	- git remote -v
+		- Tem que aparecer:
+		C:\DEV\apps\ionic\tboats-checklist-reviser>git remote -v
+		origin  https://github.com/tuicci/tboats-checklist-reviser.git (fetch)
+		origin  https://github.com/tuicci/tboats-checklist-reviser.git (push)
+	- git push origin master
+		- Entrar com usuario do github
+		- Entrar com senha do github
+
+- Inside the application, set up the Pro Client
+	 (gives you access to the Monitoring and Deploy APIs inside of your app)
+npm install @ionic/app-scripts@latest @ionic/pro@latest
+
+- Depois, gambiarras do nodejs:
+	Deleting the node_modules folder 
+	Deleting the package-lock.json
+	npm install fixed the problem.
