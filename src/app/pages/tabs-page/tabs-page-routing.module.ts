@@ -5,6 +5,7 @@ import { TabsPage } from './tabs-page';
 
 import { AboutPage } from '../about/about';
 import { MapPage } from '../map/map';
+import { ChecklistPage } from '../checklist/checklist';
 import { SchedulePage } from '../schedule/schedule';
 import { SessionDetailPage } from '../session-detail/session-detail';
 import { SpeakerDetailPage } from '../speaker-detail/speaker-detail';
@@ -18,10 +19,15 @@ const routes: Routes = [
     children: [
       // tab one
       {
-        path: 'schedule',
-        component: SchedulePage,
-        outlet: 'schedule'
+        path: 'checklist',
+        component: ChecklistPage,
+        outlet: 'checklist'
       },
+      {
+          path: 'schedule',
+          component: SchedulePage,
+          outlet: 'schedule'
+        },
       {
         path: 'session/:sessionId',
         component: SessionDetailPage,

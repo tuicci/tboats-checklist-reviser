@@ -16,6 +16,11 @@ import { UserData } from './providers/user-data';
 export class AppComponent implements OnInit {
   appPages = [
     {
+      title: 'Checklist',
+      url: '/app/tabs/(checklist:checklist)',
+      icon: 'checkbox-outline'
+    },
+    {
       title: 'Schedule',
       url: '/app/tabs/(schedule:schedule)',
       icon: 'calendar'
@@ -111,7 +116,7 @@ export class AppComponent implements OnInit {
 
   logout() {
     this.userData.logout().then(() => {
-      return this.navigate('/app/tabs/(schedule:schedule)');
+      return this.navigate('/app/tabs/(checklist:checklist)');
     });
   }
 
